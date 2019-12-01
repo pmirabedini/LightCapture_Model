@@ -10,8 +10,7 @@ import matplotlib.pyplot as plt
 
 def get_random_direction_angles():
     Theta2 = (np.random.rand()-0.5)*2*np.pi  
-    phi2 = (np.random.rand())*2*np.pi    #phi2 between 0 & 2pi
-    #phi2 = np.arccos(1-np.random.rand(1))[0]  #phi2 between 0 & pi/2
+    phi2 = (np.random.rand())*2*np.pi   
     return Theta2, phi2   
 
 
