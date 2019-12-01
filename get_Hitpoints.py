@@ -12,7 +12,6 @@ def GetHits(N,pil_h,Lambda,L,R):
     print("absorbed by water", Pw)
     print("left from the top",Pt)
     print("lost after runs",Pl)
-    #print("min hitpoint z",min(hitpoint[2]))
 
     #making arrays of hitpoints and hitangles for plotting 
     Hitpoint = np.array(hitpoint)
@@ -89,7 +88,6 @@ def GetHits(N,pil_h,Lambda,L,R):
     z_h_nopil_Conf = []
     Points_nopilConf = []
     Theta_nopil = []
-    #R = 5
 
     for i in range(0,len(x_h_nopil)): 
         if np.sqrt(x_h_nopil[i]**2+y_h_nopil[i]**2) <= R:
@@ -102,9 +100,6 @@ def GetHits(N,pil_h,Lambda,L,R):
             Thetanopil = th_h_nopil[i]
             #print(Thetanopil)
             Theta_nopil.append(Thetanopil)
-        
-    #print(Points_nopilConf[1])
-    #print(x_h_nopil_Conf[1],y_h_nopil_Conf[1],z_h_nopil_Conf[1])
 
     #if there was no ground
     x_h_nogr = Hitpoint_nogr[:,0]
@@ -117,7 +112,6 @@ def GetHits(N,pil_h,Lambda,L,R):
     z_h_nogr_Conf = []
     Points_nogrConf = []
     Theta_nogr = []
-    #R = 5
 
     for m in range(0,len(x_h_nogr)):
         if np.sqrt(x_h_nogr[m]**2+y_h_nogr[m]**2)==R:
@@ -168,10 +162,3 @@ def GetHits(N,pil_h,Lambda,L,R):
     print("Hitpoint_imtop",len(hitpoints_imtop))
 
     return Hitpoint,Th_h,Z_pil_all,Th_pil_all,X_gr_all,Y_gr_all,Z_gr_all,All_Points,Hitpoint_pil,Hitpoint_gr,Points_nopilConf, Points_nogrConf,hitpoints_imtop 
-
-#save output txt
-#np.savetxt("/Users/pmira002/Desktop/Projects/Ray_Trace/Pil_height_data/Distr_HitPoints/pil_height_100/R5/S0Ref0.2/All_points.txt", All_Points)
-#np.savetxt("/Users/pmira002/Desktop/Projects/Ray_Trace/Pil_height_data/Distr_HitPoints/pil_height_100/R5/S0Ref0.2/Hitpoints_pil.txt", Hitangle_pil)
-#np.savetxt("/Users/pmira002/Desktop/Projects/Ray_Trace/Pil_height_data/Distr_HitPoints/pil_height_100/R5/S0Ref0.2/Hitpoints_gr.txt", Hitpoint_gr)
-#np.savetxt("/Users/pmira002/Desktop/Projects/Ray_Trace/Pil_height_data/Distr_HitPoints/pil_height_100/R5/S0Ref0.2/Points_nopil_Conf.txt", Points_nopilConf)
-#np.savetxt("/Users/pmira002/Desktop/Projects/Ray_Trace/Pil_height_data/Distr_HitPoints/pil_height_100/R5/S0Ref0.2/Points_nogr_Conf.txt", Points_nogrConf)
