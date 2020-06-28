@@ -3,8 +3,7 @@ The LightCapture model is a Monte Carlo based ray-tracing python code designed t
 
 To use the code, download the attched files and follow the steps in the README.txt file.
 
-# Mailing Address for Questions:
-pmira002@ucr.edu
+
 
 
 
