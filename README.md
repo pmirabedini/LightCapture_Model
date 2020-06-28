@@ -1,3 +1,8 @@
 # LightCapture_Model
-The LightCapture model is a python code to find the correlation between pillar's geometry (radius and length) and the probability distribution of absorbed light through the length of pillar. The results can help designing more efficient systems for photocatalytic reactions in water splitting and waste-water treatment applications. 
-To use the code, download the attched files and follow the steps in the README.txt file to generate the results.
+The LightCapture model is a python-based raytracing code designed to find the correlation between micropillars' geometry and light absorption through the length of pillars in microfluidic reactors. The results potentially contribute to developing more efficient structures for photocatalytic reactions in waste-water treatment applications. 
+
+To use the code, download the attched files and follow the steps in the README.txt file.
+
+
+
+
