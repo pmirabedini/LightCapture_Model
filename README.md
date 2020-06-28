@@ -3,8 +3,10 @@ The LightCapture model is a python-based raytracing code designed to find the co
 
 To use the code, download the attched files and follow the steps in the README.txt file.
 
-Cite:
+# Mailing Address for Questions:
+pmira002@ucr.edu
 
+# Cite:
 P. S. Mirabedini, A. Truszkowska, D. Z. Ashby, M. P. Rao, and P. A. Greaney, “Coupled Light Capture and Lattice Boltzmann Model of TiO2 Micropillar Array for Water Purification” MRS Advances 467, 2689 (2019)
 
 
